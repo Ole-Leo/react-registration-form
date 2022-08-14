@@ -24,6 +24,8 @@ npm start
 npm run build
 ```
 
+для реализации формы использовалась библиотека [React Hook Form](https://react-hook-form.com/)
+
 ## Красный коридор
 
 ### А вы фреймворки продаете?
