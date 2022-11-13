@@ -4,7 +4,7 @@ import { FC } from 'react';
 import { SubmitHandler, useForm } from 'react-hook-form';
 import { cn } from '@bem-react/classname';
 
-type FormData = {
+type FormFields = {
   login: string;
   email: string;
   password: string;
@@ -18,16 +18,16 @@ const validEmail = new RegExp(/^[\w]{1}[\w-.]*@[\w-]+\.[a-z]{2,4}$/i);
 const validLoginLength = 4;
 const validPasswordLength = 6;
 
-const Form: FC = () => {
+export const Form: FC = () => {
   const {
     register,
     handleSubmit,
     getValues,
     reset,
     formState: { errors, isValid },
-  } = useForm<FormData>({ mode: 'onBlur' });
+  } = useForm<FormFields>({ mode: 'onBlur' });
 
-  const onSubmit: SubmitHandler<FormData> = data => {
+  const onSubmit: SubmitHandler<FormFields> = data => {
     console.log(data);
     reset();
   };
@@ -109,7 +109,7 @@ const Form: FC = () => {
             className={cnForm('Input', { checkbox: true })}
             type="checkbox"
             {...register('checkbox', {
-              required: 'You must agree!',
+              required: 'Please, check this field',
               value: true,
             })}
           />
@@ -127,5 +127,3 @@ const Form: FC = () => {
     </>
   );
 };
-
-export default Form;

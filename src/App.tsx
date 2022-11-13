@@ -1,7 +1,7 @@
 import './App.css';
 
 import { FC } from 'react';
-import Form from './components/Form/Form';
+import { Form } from './components/Form/Form';
 import { cn } from '@bem-react/classname';
 
 const cnApp = cn('App');

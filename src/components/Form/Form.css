@@ -73,7 +73,7 @@
 }
 
 .Form-Input_submit {
-  -webkit-appearance: none;
+  appearance: none;
 }
 
 .Form-Input_submit:disabled {
