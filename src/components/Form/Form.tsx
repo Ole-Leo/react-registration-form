@@ -25,7 +25,7 @@ export const Form: FC = () => {
     getValues,
     reset,
     formState: { errors, isValid },
-  } = useForm<FormFields>({ mode: 'onBlur' });
+  } = useForm<FormFields>({ mode: 'onTouched' });
 
   const onSubmit: SubmitHandler<FormFields> = data => {
     console.log(data);
