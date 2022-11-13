@@ -1,0 +1,99 @@
+.Form {
+  width: 500px;
+  margin: 0 auto;
+
+  padding: 30px 0;
+}
+
+.Form-Heading {
+  padding-bottom: 10px;
+  font-weight: 100;
+  text-align: center;
+
+  color: white;
+  border-bottom: 1px solid rgb(79, 98, 148);
+}
+
+.Form-Label {
+  display: block;
+
+  margin-bottom: 13px;
+  margin-top: 20px;
+
+  font-size: 14px;
+  font-weight: 200;
+  line-height: 2;
+  text-align: left;
+
+  color: white;
+}
+
+.Form-Input {
+  display: block;
+
+  width: 100%;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+
+  font-size: 14px;
+
+  box-sizing: border-box;
+  border: 1px solid white;
+  border-radius: 4px;
+}
+
+.Form-Input_submit {
+  margin-top: 40px;
+  padding: 20px;
+
+  font-size: 16px;
+  font-weight: 100;
+  letter-spacing: 10px;
+
+  background: #ec5990;
+  color: white;
+  border: none;
+
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.Form-Input_submit:hover {
+  background: #bf1650;
+
+  transition: 0.3s all;
+}
+
+.Form-Input_submit:active {
+  border: 1px solid transparent;
+  opacity: 0.8;
+
+  transition: 0.3s all;
+  transform: translateY(3px);
+}
+
+.Form-Input_submit {
+  appearance: none;
+}
+
+.Form-Input_submit:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.Form-Input_checkbox {
+  display: inline-block;
+
+  width: fit-content;
+  margin-bottom: 5px;
+  margin-right: 10px;
+}
+
+.Form-Error {
+  color: #bf1650;
+}
+
+.Form-Error::before {
+  display: inline;
+  content: '⚠ ';
+}
