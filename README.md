@@ -3,7 +3,7 @@
 Для запуска необходимо клонировать репозиторий
 
 ```
-git clone https://github.com/Ole-Leo/react-form.git
+git clone https://github.com/Ole-Leo/react-course-form.git
 ```
 
 а также установить зависимости
