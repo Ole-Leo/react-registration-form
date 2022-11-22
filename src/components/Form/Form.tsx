@@ -1,8 +1,8 @@
-import './Form.css';
-
 import { FC } from 'react';
-import { SubmitHandler, useForm } from 'react-hook-form';
 import { cn } from '@bem-react/classname';
+import { SubmitHandler, useForm } from 'react-hook-form';
+
+import './Form.css';
 
 type FormFields = {
   login: string;
@@ -118,11 +118,12 @@ export const Form: FC = () => {
         {errors.checkbox && (
           <p className={cnForm('Error')}>{errors.checkbox.message}</p>
         )}
-        <input
-          className={cnForm('Input', { submit: true })}
-          type="submit"
+        <button
+          className={cnForm('Button', { submit: true })}
           disabled={!isValid}
-        />
+        >
+          Sign Up
+        </button>
       </form>
     </>
   );
