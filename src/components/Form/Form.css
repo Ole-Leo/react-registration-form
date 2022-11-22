@@ -28,7 +28,8 @@
   color: white;
 }
 
-.Form-Input {
+.Form-Input,
+.Form-Button {
   display: block;
 
   width: 100%;
@@ -42,13 +43,13 @@
   border-radius: 4px;
 }
 
-.Form-Input_submit {
+.Form-Button_submit {
   margin-top: 40px;
   padding: 20px;
 
   font-size: 16px;
   font-weight: 100;
-  letter-spacing: 10px;
+  letter-spacing: 4px;
 
   background: #ec5990;
   color: white;
@@ -58,7 +59,7 @@
   cursor: pointer;
 }
 
-.Form-Input_submit:hover {
+.Form-Button_submit:hover {
   background: #bf1650;
 
   transition: 0.3s all;
@@ -72,13 +73,13 @@
   transform: translateY(3px);
 }
 
-.Form-Input_submit {
-  appearance: none;
-}
-
-.Form-Input_submit:disabled {
+.Form-Button_submit:disabled {
   opacity: 0.4;
   cursor: not-allowed;
+}
+
+.Form-Button_submit:disabled:hover {
+  background: #ec5990;
 }
 
 .Form-Input_checkbox {
