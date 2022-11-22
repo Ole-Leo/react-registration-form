@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.css": "/react-course-form/static/css/main.655c9fd4.css",
-    "main.js": "/react-course-form/static/js/main.b9d42926.js",
+    "main.css": "/react-course-form/static/css/main.e3a6a957.css",
+    "main.js": "/react-course-form/static/js/main.5da3e1c1.js",
     "index.html": "/react-course-form/index.html"
   },
   "entrypoints": [
-    "static/css/main.655c9fd4.css",
-    "static/js/main.b9d42926.js"
+    "static/css/main.e3a6a957.css",
+    "static/js/main.5da3e1c1.js"
   ]
 }
