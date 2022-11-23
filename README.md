@@ -1,9 +1,11 @@
-Форма с валидацией полей перед отправкой
+[Demo](https://ole-leo.github.io/react-registration-form/)
+
+Форма регистрации с валидацией полей перед отправкой
 
 Для запуска необходимо клонировать репозиторий
 
 ```
-git clone https://github.com/Ole-Leo/react-course-form.git
+git clone https://github.com/Ole-Leo/react-registration-form.git
 ```
 
 а также установить зависимости
